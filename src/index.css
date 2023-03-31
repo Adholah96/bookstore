@@ -4,18 +4,21 @@
   box-sizing: border-box;
   font-size: 16px;
 }
+
+ul {
+  list-style-type: none;
+}
+
 nav ul {
   display: flex;
   gap: 1rem;
 }
 
-ul {
-  list-style-type: none;
-}
 .booksul li {
   font-size: 20px;
   padding-bottom: 1rem;
 }
+
 nav {
   padding: 1rem 2rem;
   background-color: rgb(219, 219, 219);
@@ -23,16 +26,19 @@ nav {
   display: flex;
   gap: 4rem;
 }
+
 input {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
 }
+
 .container {
   display: flex;
   justify-content: space-around;
   padding: 3rem 0;
 }
+
 .statusbtn {
   margin: 2rem 2rem;
 }
