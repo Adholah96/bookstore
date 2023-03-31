@@ -17,6 +17,12 @@ nav ul {
 .booksul li {
   font-size: 20px;
   padding-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.booksul li button {
+  padding: 3px 5px;
 }
 
 nav {

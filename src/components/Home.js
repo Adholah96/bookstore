@@ -1,39 +1,24 @@
+import Form from './Form';
+import Book from '../Book';
+
 function Home() {
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
+  const books = [
+    { id: 1, title: 'The Alchemist', author: 'Paulo Coelho' },
+    { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee' },
+    { id: 3, title: '1984', author: 'George Orwell' },
+    { id: 4, title: 'Pride and Prejudice', author: 'Jane Austen' },
+  ];
   return (
     <>
       <div className="container">
         <div className="booksContainer">
           <ul className="booksul">
-            <li>
-              Darkest Hour
-              <span>-Arthur</span>
-            </li>
-            <li>
-              Darkest Hour
-              <span>-Ochieng</span>
-            </li>
-            <li>
-              Climatic diversity
-              <span>-Heldricks</span>
-            </li>
+            {books.map((book) => (
+              <Book key={book.id} title={book.title} author={book.author} />
+            ))}
           </ul>
         </div>
-        <div className="booksForm">
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="title">
-              Title :
-              <input type="text" name="title" id="title" />
-            </label>
-            <label htmlFor="author">
-              Author :
-              <input type="text" name="author" id="author" />
-            </label>
-            <button type="button">Add Book</button>
-          </form>
-        </div>
+        <Form />
       </div>
     </>
   );
