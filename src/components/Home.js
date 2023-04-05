@@ -8,11 +8,13 @@ function Home() {
     <>
       <div className="container">
         <div className="booksContainer">
-          <div className="booksul">
+          <ul className="booksul">
             {bookItems.map((book) => (
-              <Book key={book.id} title={book.title} author={book.author} />
+              <li key={book.item_id}>
+                <Book item={book} />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
         <Form />
       </div>
