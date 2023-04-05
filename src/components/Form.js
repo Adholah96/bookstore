@@ -17,6 +17,7 @@ const Form = () => {
       title: formData.get('title'),
     };
     dispatch(addBook(newBook));
+    e.target.reset();
   };
   return (
     <div className="booksForm">
