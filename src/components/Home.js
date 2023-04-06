@@ -27,7 +27,7 @@ function Home() {
   if (books.length === 0) {
     return (
       <>
-        <h2 className="no-book">No books, Add a few</h2>
+        <h2 className="no-book">No books</h2>
         <Form />
       </>
     );
