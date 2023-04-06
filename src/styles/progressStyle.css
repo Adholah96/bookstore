@@ -1,6 +1,13 @@
+:root {
+  --size: 5rem;
+  --fg: #0290ff;
+  --bg: rgb(211, 211, 211);
+  --value: 64;
+}
+
 div[role='progressbar'] {
-  width: 5rem;
-  height: 5rem;
+  width: var(--size);
+  height: var(--size);
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -11,13 +18,13 @@ div[role='progressbar'] {
       transparent 0 99.9%,
       white 0
     ),
-    conic-gradient(#0290ff calc(64 * 1%), rgb(211, 211, 211) 0);
+    conic-gradient(var(--fg) calc(var(--value) * 1%), var(--bg) 0);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0;
-  color: #0290ff;
+  color: var(--fg);
 }
 
 div[role='progressbar']::before {
-  counter-reset: percentage 64;
+  counter-reset: percentage var(--value);
   content: counter(percentage) '%';
 }
