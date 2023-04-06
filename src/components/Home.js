@@ -41,6 +41,36 @@ function Home() {
             {books.map((book) => (
               <li key={book.id}>
                 <Book item={book} />
+                <div className="contain">
+                  <div className="book-progress">
+                    {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+                    <div
+                      role="progressbar"
+                      aria-valuenow="65"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    />
+                    <div className="task-progress">
+                      <p className="Complete-Task">
+                        {Math.floor(Math.random() * (99 - 0)) + 0}
+                        <span>%</span>
+                      </p>
+                      <p className="Completed">Completed</p>
+                    </div>
+                  </div>
+                  <div className="divider-1" />
+                  <div className="level">
+                    <p className="main-l">CURRENT CHAPTER</p>
+                    <p className="main-chapter">
+                      Chapter
+                      {' '}
+                      {Math.floor(Math.random() * (20 - 0)) + 0}
+                    </p>
+                    <button type="button" className="Update-progress">
+                      UPDATE PROGRESS
+                    </button>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>

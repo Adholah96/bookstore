@@ -1,0 +1,22 @@
+div[role='progressbar'] {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(#0290ff calc(64 * 1%), rgb(211, 211, 211) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0;
+  color: #0290ff;
+}
+
+div[role='progressbar']::before {
+  counter-reset: percentage 64;
+  content: counter(percentage) '%';
+}
