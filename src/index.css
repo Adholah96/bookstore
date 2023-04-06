@@ -42,16 +42,19 @@ nav {
 .statusbtn {
   margin: 2rem 2rem;
 }
+
 form {
   width: 20%;
   margin: 0 auto;
 }
+
 input {
   display: block;
   width: 100%;
   margin-bottom: 0.2rem;
   padding: 2px;
 }
+
 .no-book {
   text-align: center;
   padding: 1rem 0;
