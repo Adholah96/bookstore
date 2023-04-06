@@ -7,6 +7,15 @@
   font-size: 16px;
 }
 
+.nav-logo {
+  margin: 0.375rem 2.938rem 0.125rem 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
 ul {
   list-style-type: none;
 }
@@ -14,6 +23,27 @@ ul {
 nav ul {
   display: flex;
   gap: 1rem;
+}
+
+nav ul li:nth-child(1) {
+  width: 3.688rem;
+  height: 1rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+nav ul li:nth-child(2) {
+  width: 6.563rem;
+  height: 1rem;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.813rem;
+
+  letter-spacing: 1.9px;
+  color: #121212;
 }
 
 .booksul li {
@@ -42,9 +72,10 @@ nav ul {
 }
 
 nav {
-  padding: 1rem 2rem;
+  height: 5.938rem;
+  margin: 0 0 2.375rem;
+  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: rgb(219, 219, 219);
-  height: 50px;
   display: flex;
   gap: 4rem;
 }

@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <nav>
-        <h1>BookStore CMS</h1>
+        <h1 className="nav-logo">BookStore CMS</h1>
         <ul>
           <li>
             <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
