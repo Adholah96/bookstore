@@ -144,6 +144,14 @@ input {
   background-color: #fff;
 }
 
+#input-2 {
+  width: 20rem;
+}
+
+#input-1 {
+  width: 70rem;
+}
+
 .no-book {
   text-align: center;
   padding: 1rem 0;

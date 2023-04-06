@@ -40,6 +40,7 @@ const Form = () => {
           name="title"
           value={input.title}
           placeholder="Title"
+          id="input-1"
         />
         <br />
         <input
@@ -48,6 +49,7 @@ const Form = () => {
           onChange={handleInputChange}
           value={input.author}
           placeholder="Author"
+          id="input-2"
         />
         <br />
         <button type="button" onClick={handleFormSubmit}>
