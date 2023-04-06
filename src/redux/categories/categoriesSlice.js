@@ -3,18 +3,14 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   categories: [],
   status: 'Under construction',
+  showStatus: false,
 };
 
 const categoriesSlice = createSlice({
   name: 'category',
   initialState,
   reducers: {
-    checkStatus: (state, action) => {
-      if (action.payload) {
-        return { ...state, categories: [] };
-      }
-      return state;
-    },
+    checkStatus: (state) => ({ ...state, showStatus: true }),
   },
 });
 
