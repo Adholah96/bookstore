@@ -4,14 +4,13 @@ import { removeBook } from './redux/books/bookSlice';
 
 const Book = ({ item }) => {
   const dispatch = useDispatch();
-  const { title, author, item_id: id } = item;
 
   return (
     <>
-      {title}
+      {item.title}
       -
-      {author}
-      <button type="button" onClick={() => dispatch(removeBook(id))}>
+      {item.author}
+      <button type="button" onClick={() => dispatch(removeBook(item.id))}>
         Remove
       </button>
     </>
@@ -22,7 +21,8 @@ Book.propTypes = {
   item: PropTypes.shape({
     author: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    item_id: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
   }).isRequired,
 };
+
 export default Book;
