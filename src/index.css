@@ -9,20 +9,21 @@
 
 nav {
   height: 5.938rem;
-  margin: 0 0 2.375rem;
   padding: 1.438rem 6.188rem 1.688rem 6.25rem;
   background-color: #fff;
   display: flex;
+  align-items: center;
   gap: 4rem;
+  width: 100%;
 }
 
 .nav-logo {
-  margin: 0.375rem 2.938rem 0.125rem 4rem;
+  margin: 0.375rem 0.938rem 0.125rem 0rem;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.875rem;
+  font-size: 1.375rem;
   font-weight: bold;
-  letter-spacing: normal;
   color: #0290ff;
+  white-space: nowrap;
 }
 
 ul {
@@ -82,6 +83,7 @@ form button {
   text-align: center;
   color: #fff;
   font-family: 'Roboto Slab', serif;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -130,7 +132,7 @@ form button {
 form {
   display: flex;
   padding: 2rem 4rem 7.625rem 1.688rem;
-  margin: -1.4rem 8.25rem 0;
+  margin: -1.4rem 4.25rem 0;
 }
 
 input {
@@ -175,6 +177,7 @@ input {
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  margin-bottom: 1rem;
 }
 
 .list-container h1 {
@@ -202,7 +205,7 @@ input {
 
 .contain {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .level {
@@ -247,7 +250,7 @@ input {
 .divider-1 {
   width: 0.125rem;
   height: 4.375rem;
-  margin: 1.125rem 3.688rem 0 4.938rem;
+  margin: 1.125rem 3.688rem 0 -2.062rem;
   border: solid 1px #e8e8e8;
 }
 
@@ -263,14 +266,14 @@ input {
 }
 
 .hr {
-  width: 97.999rem;
+  width: 65.999rem;
   height: 0.125rem;
   margin: 0 auto;
   border: solid 1px #e8e8e8;
 }
 
 .form-h2 {
-  margin: 1.813rem 32.75rem 0 10.25rem;
+  margin: 1.813rem 32.75rem 0 6.25rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
