@@ -12,7 +12,7 @@ function Category() {
       <button type="button" className="statusbtn" onClick={handleClick}>
         Status
       </button>
-      {showStatus && <div>{status}</div>}
+      {showStatus && <div className="construction">{status}</div>}
     </>
   );
 }

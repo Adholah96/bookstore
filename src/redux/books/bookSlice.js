@@ -48,7 +48,7 @@ export const addBook = createAsyncThunk(
         item_id: id,
         title,
         author,
-        category: 'fiction',
+        category: 'Sci-fi',
       });
       return data;
     } catch (error) {

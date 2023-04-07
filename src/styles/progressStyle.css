@@ -1,0 +1,30 @@
+:root {
+  --size: 5rem;
+  --fg: #0290ff;
+  --bg: rgb(211, 211, 211);
+  --value: 64;
+}
+
+div[role='progressbar'] {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(var(--fg) calc(var(--value) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0;
+  color: var(--fg);
+}
+
+div[role='progressbar']::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}

@@ -30,27 +30,33 @@ const Form = () => {
   };
 
   return (
-    <form>
-      <input
-        type="text"
-        onChange={handleInputChange}
-        name="title"
-        value={input.title}
-        placeholder="Title"
-      />
-      <br />
-      <input
-        type="text"
-        name="author"
-        onChange={handleInputChange}
-        value={input.author}
-        placeholder="Author"
-      />
-      <br />
-      <button type="button" onClick={handleFormSubmit}>
-        Add Book
-      </button>
-    </form>
+    <>
+      <div className="hr" />
+      <h2 className="form-h2">ADD NEW BOOK</h2>
+      <form>
+        <input
+          type="text"
+          onChange={handleInputChange}
+          name="title"
+          value={input.title}
+          placeholder="Title"
+          id="input-1"
+        />
+        <br />
+        <input
+          type="text"
+          name="author"
+          onChange={handleInputChange}
+          value={input.author}
+          placeholder="Author"
+          id="input-2"
+        />
+        <br />
+        <button type="button" onClick={handleFormSubmit}>
+          ADD BOOK
+        </button>
+      </form>
+    </>
   );
 };
 
